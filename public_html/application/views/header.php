@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<?php 
-		$link = ($this->ion_auth->logged_in()) ? base_url() . "auth/logout" : base_url() . "login";
+		$link = ($this->ion_auth->logged_in()) ? base_url() . "login/logout" : base_url() . "login";
 		$text = ($this->ion_auth->logged_in()) ? " Logout" : " Login";
 		?>
 		<!-- Navbar -->
@@ -34,3 +34,10 @@
 		</div>
 		<!-- Main Content -->
 		<div class="container">
+		<!-- Error Content -->
+		<?php if($this->session->flashdata('message')) { ?>
+		<div class="alert <?php echo $this->session->flashdata('type'); ?> alert-dismissable">
+			<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<?php echo $this->session->flashdata('message'); ?>
+		</div>
+		<?php } ?>	
