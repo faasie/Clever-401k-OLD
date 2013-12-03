@@ -3,7 +3,7 @@
 	<div class="panel-body">
 		<ul class="nav nav-tabs nav-justified" id="profileTabs">
 			<li class="active"><a href="#userData" data-toggle="tab"><i class="fa fa-user fa-fw"></i> User</a></li>
-			<li><a href="#companyData" data-toggle="tab"><i class="fa fa-desktop fa-fw"></i> Company</a></li>
+			<li><a href="#companyData" data-toggle="tab"><i class="fa fa-briefcase fa-fw"></i> Company</a></li>
 			<li><a href="#qData" data-toggle="tab"><i class="fa fa-question-circle fa-fw"></i> Questionaire History</a></li>
 			<li><a href="#settings" data-toggle="tab"><i class="fa fa-gear fa-fw"></i> Settings</a></li>
 		</ul>

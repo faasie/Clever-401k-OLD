@@ -12,6 +12,7 @@ class Priv_Controller extends MY_Controller {
 				'message' => 'You must be logged in to view this page.'
 				);
 			$this->session->set_flashdata($data);
+			redirect('site','redirect');
 		}
 	}
 }

@@ -7,10 +7,6 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/views/css/style.css">
 	</head>
 	<body>
-		<?php 
-		$link = ($this->ion_auth->logged_in()) ? base_url() . "login/logout" : base_url() . "login";
-		$text = ($this->ion_auth->logged_in()) ? " Logout" : " Login";
-		?>
 		<!-- Navbar -->
 		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
@@ -27,7 +23,28 @@
 						<li><a href="<?php echo base_url(); ?>"><i class="fa fa-home fa-fw"></i> Home</a>
 						<li><a href="about"><i class="fa fa-info fa-fw"></i> About</a></li>
 						<li><a href="contact"><i class="fa fa-envelope fa-fw"></i> Contact Us</a></li>
-						<li><a href="<?php echo $link; ?>"><i class="fa fa-user fa-fw"></i> <?php echo $text; ?></a></li>
+						<?php 
+						if (!$this->ion_auth->logged_in()) {
+						?>
+							<li><a href="login/index"><i class="fa fa-user fa-fw"></i> Login</a></li>
+						<?php 
+						} elseif ($this->ion_auth->logged_in()) {
+						?>
+							<li class="dropdown"> 
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> <?php echo $this->session->userdata('fullname'); ?> <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="<?php echo base_url(); ?>user/profile">Profile </a></li>
+									<li><a href="<?php echo base_url(); ?>user/password">Change password </a></li>
+									<li><a href="<?php echo base_url(); ?>login/logout">Logout </a></li>
+									<li></li>
+
+ 								</ul>
+							</li>
+						</li>
+						<?php
+						}
+						 ?>
+
 					</ul>
 				</div>
 			</div>

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"sess",
+				"session_userdata	CI - Session - Retrieving Session Data"
+			],
+			[
 				"attri",
 				"attributes"
 			],
@@ -68,10 +72,42 @@
 	"buffers":
 	[
 		{
+			"file": "public_html/application/controllers/user.php",
+			"settings":
+			{
+				"buffer_size": 691,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public_html/application/views/user/profile_view.php",
+			"settings":
+			{
+				"buffer_size": 1114,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public_html/application/views/user/password_view.php",
+			"settings":
+			{
+				"buffer_size": 1741,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public_html/application/views/header.php",
+			"settings":
+			{
+				"buffer_size": 2463,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "public_html/application/views/login/login_view.php",
 			"settings":
 			{
-				"buffer_size": 889,
+				"buffer_size": 894,
 				"line_ending": "Windows"
 			}
 		},
@@ -79,31 +115,7 @@
 			"file": "public_html/application/controllers/login.php",
 			"settings":
 			{
-				"buffer_size": 1111,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public_html/application/views/login/profile_view.php",
-			"settings":
-			{
-				"buffer_size": 1112,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public_html/application/controllers/admin.php",
-			"settings":
-			{
-				"buffer_size": 311,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public_html/application/views/admin/admin_view.php",
-			"settings":
-			{
-				"buffer_size": 632,
+				"buffer_size": 2212,
 				"line_ending": "Windows"
 			}
 		}
@@ -268,10 +280,17 @@
 	},
 	"file_history":
 	[
-		"/D/Winginx/home/clever-401k.local/public_html/application/core/Admin_Controller.php",
-		"/D/Winginx/home/clever-401k.local/public_html/application/core/Priv_Controller.php",
-		"/D/Winginx/home/clever-401k.local/public_html/application/views/css/style.css",
+		"/D/Winginx/home/clever-401k.local/public_html/application/controllers/auth-DEFAULT.php",
+		"/D/Winginx/home/clever-401k.local/public_html/application/config/autoload.php",
+		"/D/Winginx/home/clever-401k.local/public_html/application/views/login/login_view.php",
 		"/D/Winginx/home/clever-401k.local/public_html/application/views/header.php",
+		"/D/Winginx/home/clever-401k.local/public_html/application/config/ion_auth.php",
+		"/D/Winginx/home/clever-401k.local/public_html/application/controllers/admin.php",
+		"/D/Winginx/home/clever-401k.local/public_html/application/views/admin/admin_view.php",
+		"/D/Winginx/home/clever-401k.local/public_html/application/core/Priv_Controller.php",
+		"/D/Winginx/home/clever-401k.local/public_html/application/views/login/profile_view.php",
+		"/D/Winginx/home/clever-401k.local/public_html/application/core/Admin_Controller.php",
+		"/D/Winginx/home/clever-401k.local/public_html/application/views/css/style.css",
 		"/D/Winginx/home/clever-401k.local/public_html/application/config/config.php",
 		"/D/Winginx/home/clever-401k.local/public_html/application/controllers/site.php",
 		"/D/Winginx/home/clever-401k.local/public_html/application/views/site/index_view.php",
@@ -279,11 +298,8 @@
 		"/D/Winginx/home/clever-401k.local/public_html/application/views/auth/login.php",
 		"/D/Winginx/home/clever-401k.local/public_html/application/controllers/auth.php",
 		"/C/Users/mfaas/AppData/Roaming/Sublime Text 2/Packages/User/php/data_content.sublime-snippet",
-		"/D/Winginx/home/clever-401k.local/public_html/application/config/ion_auth.php",
 		"/D/Winginx/home/clever-401k.local/public_html/application/models/ion_auth_model.php",
-		"/D/Winginx/home/clever-401k.local/public_html/application/views/login/login_view.php",
 		"/D/Winginx/home/clever-401k.local/public_html/application/controllers/login.php",
-		"/D/Winginx/home/clever-401k.local/public_html/application/config/autoload.php",
 		"/D/Winginx/home/clever-401k.local/public_html/application/views/template.php",
 		"/D/Winginx/home/clever-401k.local/public_html/application/views/footer.php",
 		"/D/Winginx/home/clever-401k.local/public_html/application/views/site/index.php",
@@ -391,11 +407,7 @@
 		"/D/Wnmp/html/mvc/libs/View.php",
 		"/D/Wnmp/html/mvc/views/index/index.php",
 		"/D/Wnmp/html/mvc/views/error/index.php",
-		"/D/Wnmp/html/mvc/views/footer.php",
-		"/D/Wnmp/html/mvc/libs/Model.php",
-		"/D/Wnmp/html/mvc/controllers/help.php",
-		"/D/Wnmp/html/mvc/models/help_model.php",
-		"/D/Wnmp/html/mvc/controllers/error.php"
+		"/D/Wnmp/html/mvc/views/footer.php"
 	],
 	"find":
 	{
@@ -413,6 +425,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"session",
+			"the",
+			"session",
+			"menu",
+			"></",
+			"login",
 			".\n",
 			";\n",
 			"username",
@@ -469,23 +487,23 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public_html/application/views/login/login_view.php",
+					"file": "public_html/application/controllers/user.php",
 					"settings":
 					{
-						"buffer_size": 889,
+						"buffer_size": 691,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								679,
-								679
+								691,
+								691
 							]
 						],
 						"settings":
@@ -579,8 +597,7 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -590,18 +607,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "public_html/application/controllers/login.php",
+					"file": "public_html/application/views/user/profile_view.php",
 					"settings":
 					{
-						"buffer_size": 1111,
+						"buffer_size": 1114,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								819,
-								816
+								106,
+								106
 							]
 						],
 						"settings":
@@ -706,18 +723,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "public_html/application/views/login/profile_view.php",
+					"file": "public_html/application/views/user/password_view.php",
 					"settings":
 					{
-						"buffer_size": 1112,
+						"buffer_size": 1741,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1112,
-								1112
+								553,
+								553
 							]
 						],
 						"settings":
@@ -821,18 +838,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "public_html/application/controllers/admin.php",
+					"file": "public_html/application/views/header.php",
 					"settings":
 					{
-						"buffer_size": 311,
+						"buffer_size": 2463,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								311,
-								311
+								2095,
+								2095
 							]
 						],
 						"settings":
@@ -926,7 +943,124 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public_html/application/views/login/login_view.php",
+					"settings":
+					{
+						"buffer_size": 894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								894,
+								894
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -935,19 +1069,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "public_html/application/views/admin/admin_view.php",
+					"buffer": 5,
+					"file": "public_html/application/controllers/login.php",
 					"settings":
 					{
-						"buffer_size": 632,
+						"buffer_size": 2212,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								632,
-								632
+								320,
+								320
 							]
 						],
 						"settings":
@@ -1041,7 +1175,8 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1094,16 +1229,24 @@
 		"selected_items":
 		[
 			[
+				"auto",
+				"application/config/autoload.php"
+			],
+			[
+				"autol",
+				"application/config/autoload.php"
+			],
+			[
+				"auth",
+				"application/controllers/auth-DEFAULT.php"
+			],
+			[
 				"config",
-				"application/config/config.php"
+				"application/config/ion_auth.php"
 			],
 			[
 				"ion",
 				"application/config/ion_auth.php"
-			],
-			[
-				"auto",
-				"application/config/autoload.php"
 			],
 			[
 				"confi",
@@ -1120,10 +1263,6 @@
 			[
 				"routes",
 				"public_html/application/config/routes.php"
-			],
-			[
-				"autol",
-				"application/config/autoload.php"
 			],
 			[
 				"conf",
