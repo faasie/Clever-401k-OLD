@@ -5,7 +5,7 @@
 	<div class="panel-content">
 		<?php 
 		$a = array('class' => 'form-horizontal'); 
-		echo form_open('login/changePassword', $a);
+		echo form_open('auth/changePassword', $a);
 		?>
 		<div class="form-group">
 			<?php 
@@ -25,7 +25,7 @@
 				'name' => 'old_pw',
 				'id' => 'old_pw'
 				); 
-				echo form_input($a);
+				echo form_password($a);
 				?>
 			</div>
 		</div>
@@ -39,7 +39,7 @@
 				'name' => 'new_pw',
 				'id' => 'new_pw'
 				); 
-				echo form_input($a);
+				echo form_password($a);
 				?>
 			</div>
 		</div>
@@ -53,7 +53,7 @@
 				'name' => 'verify_pw',
 				'id' => 'verify_pw'
 				); 
-				echo form_input($a);
+				echo form_password($a);
 				?>
 			</div>
 		</div>

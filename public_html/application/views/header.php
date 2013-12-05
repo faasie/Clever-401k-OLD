@@ -35,7 +35,7 @@
 								<ul class="dropdown-menu">
 									<li><a href="<?php echo base_url(); ?>user/profile">Profile </a></li>
 									<li><a href="<?php echo base_url(); ?>user/password">Change password </a></li>
-									<li><a href="<?php echo base_url(); ?>login/logout">Logout </a></li>
+									<li><a href="<?php echo base_url(); ?>auth/logout">Logout </a></li>
 									<li></li>
 
  								</ul>

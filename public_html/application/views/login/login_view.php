@@ -1,6 +1,6 @@
 <?php
 $a = array('class' => 'form-horizontal');
-echo form_open('login/validateLogin', $a);
+echo form_open('auth/login', $a);
 ?>
 <div class="form-group">
 	<?php 
