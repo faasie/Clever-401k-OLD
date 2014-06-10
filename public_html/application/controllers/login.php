@@ -14,7 +14,6 @@ class Login extends CI_Controller {
 			redirect('user/profile', 'refresh');
 		}
 	}
-
 }
 
 /* End of file login.php */

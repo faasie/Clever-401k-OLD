@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Welcome to Clever 401k</title>
+		<title>Clever 401k</title>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/views/css/bootstrap.css">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>application/views/css/style.css">
+		<script src="<?php echo base_url(); ?>application/views/js/jquery.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<!-- Navbar -->
@@ -16,7 +17,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-				<a href="<?php echo base_url(); ?>" class="navbar-brand">Clever<strong>401k</strong>Logo</a>
+				<a href="<?php echo base_url(); ?>" class="navbar-brand">Clever<strong>401k</strong></a>
 				</div>
 				<div class="collapse navbar-collapse navbar-right" id="cleverNav">
 					<ul class="nav navbar-nav">
@@ -33,11 +34,10 @@
 							<li class="dropdown"> 
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user fa-fw"></i> <?php echo $this->session->userdata('fullname'); ?> <b class="caret"></b></a>
 								<ul class="dropdown-menu">
-									<li><a href="<?php echo base_url(); ?>user/profile">Profile </a></li>
-									<li><a href="<?php echo base_url(); ?>user/password">Change password </a></li>
+									<li><a href="<?php echo base_url(); ?>dashboard">Dashboard </a></li>
+									<li><a href="<?php echo base_url(); ?>dashboard/password">Change password </a></li>
 									<li><a href="<?php echo base_url(); ?>auth/logout">Logout </a></li>
 									<li></li>
-
  								</ul>
 							</li>
 						</li>
@@ -54,7 +54,8 @@
 		<!-- Error Content -->
 		<?php if($this->session->flashdata('message')) { ?>
 		<div class="alert <?php echo $this->session->flashdata('type'); ?> alert-dismissable">
-			<button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button>
+			<!-- <button class="close" type="button" data-dismiss="alert" aria-hidden="true">&times;</button> -->
+			<button class="close" type="button" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times fa-fw"></i></button>
 			<?php echo $this->session->flashdata('message'); ?>
 		</div>
 		<?php } ?>	

@@ -8,7 +8,7 @@ class Auth extends MY_Controller {
 		$pw 	= $this->input->post('password');
 
 		if ($this->ion_auth->login($user, $pw)) {
-			redirect('user/profile','refresh');
+			redirect('dashboard','refresh');
 		} else {
 			$msg = (!$this->ion_auth->username_check($user)) ? "Username not found!" : "Login failed. Please try again.";
 			$this->session->set_flashdata('type', 'alert-danger');
@@ -33,7 +33,7 @@ class Auth extends MY_Controller {
 		{
 			$this->session->set_flashdata('type', 'alert-danger');
 			$this->session->set_flashdata('message', validation_errors());
-			redirect('user/password', 'redirect');
+			redirect('dashboard/password', 'redirect');
 		} else {
 			$identity 	= $this->session->userdata('username');
 			$old_pw		= $this->input->post('old_pw');
@@ -42,13 +42,11 @@ class Auth extends MY_Controller {
 			if($change) {
 				$this->session->set_flashdata('type', 'alert-success');
 				$this->session->set_flashdata('message', 'Password successfully changed.');
-				redirect('user/profile', 'redirect');
+				redirect('dashboard', 'redirect');
 			} else {
-				// $this->session->set_flashdata('type', 'alert-danger');
-				// $this->session->set_flashdata('message', 'Password change FAILED. Your password has not been changed. <br />Your old password was likely typed incorrectly.');
 				$flash = array('type' => 'alert-danger', 'message' => 'Password change FAILED. Your password has not been changed. <br />Your old password was likely typed incorrectly.');
 				$this->session->set_flashdata($flash);
-				redirect('user/profile', 'redirect');
+				redirect('dashboard/password', 'redirect');
 			}
 		}
 

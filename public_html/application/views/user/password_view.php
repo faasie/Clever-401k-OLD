@@ -23,7 +23,8 @@
 				<?php 
 				$a = array('class' => 'form-control', 
 				'name' => 'old_pw',
-				'id' => 'old_pw'
+				'id' => 'old_pw',
+				'tabindex' => 1
 				); 
 				echo form_password($a);
 				?>
@@ -37,7 +38,8 @@
 				<?php 
 				$a = array('class' => 'form-control', 
 				'name' => 'new_pw',
-				'id' => 'new_pw'
+				'id' => 'new_pw',
+				'tabindex' => 2
 				); 
 				echo form_password($a);
 				?>
@@ -51,15 +53,17 @@
 				<?php 
 				$a = array('class' => 'form-control', 
 				'name' => 'verify_pw',
-				'id' => 'verify_pw'
+				'id' => 'verify_pw',
+				'tabindex' => 3
 				); 
 				echo form_password($a);
 				?>
 			</div>
 		</div>
 		<div class="col-sm-offset-3">
-			<button type='submit' class="btn btn-primary">Change Password</button>
+			<button type='submit' class="btn btn-primary">Submit</button>
 			<button type='reset' class="btn btn-default">Clear</button>
+			<a href="<?php echo base_url(); ?>dashboard" class="btn btn-default">Cancel</a>
 		</div>		
 		<?php echo form_close(); ?>
 		<br />
